@@ -5,11 +5,11 @@ This is my current playlist and order of operations for setting up new Mac OS co
 1. Install xcode cli tools by running: `xcode-select —-install`.
 2. Install Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` If command doesn't work, check for updates [here](https://brew.sh).
 3. Install iterm2, in terminal run `brew install iterm2` Once installed open up iterm and set default shell to zsh by running: `chsh -s /bin/zsh`
-4. Insatll ohmyzsh by running `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` if command fails check out github [here](https://github.com/ohmyzsh/ohmyzsh).
+4. Insatll ohmyzsh by running `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` if command fails check out their github [here](https://github.com/ohmyzsh/ohmyzsh).
 5. Before we setup OhMyZsh lets get a text editor or use (vim) `brew install --cask visual-studio-code`.
 
 ### Pretty up the terminal
-7. Edit the .zshrc file by running `code .zshrc` from home dir. Handy plugins that I used are listed in the .zshrc file here. To use these plugins, two require further install, 
+7. Edit the .zshrc file by running `code .zshrc` from home dir. Handy plugins that I used are listed in the .zshrc file here. To use these plugins, two require further install. **UNCOMMENT LINE 12** `export ZSH="/Users/driss.guessous/.oh-my-zsh"` and export the correct path to OMZ.
 8. [zsh autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md). Run `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions` to install. 
 9. Install the powerlevel10k fonts by running: `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`. This is by far the best. If fails check website [here](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
 10. Now copy everything up to line 97 `source $ZSH/oh-my-zsh.sh` into your .zshrc. Start a new terminal window to check that it works. It will prompt you to go through the powerlevel10k config. My Choices can be found in this file:  ~/.p10k.zsh located in this folder.
