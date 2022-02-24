@@ -116,4 +116,5 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/
 pyenv virtualenvwrapper_lazy
 
-. /usr/local/etc/profile.d/autojump.sh
+# AutoJump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
