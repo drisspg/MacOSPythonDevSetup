@@ -8,8 +8,8 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation. This next line is what mine looks like ~/.oh-my-zsh
-# export ZSH="/Users/driss.guessous/.oh-my-zsh"
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/driss.guessous/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -72,7 +72,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
-
+export NVM_LAZY_LOAD=true
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -89,10 +89,13 @@ plugins=(
     colored-man-pages
     docker
     docker-compose
+    cp
+    iterm2
+    virtualenv
     github
-    helm
     kubectl
     zsh-autosuggestions
+    zsh-syntax-highlighting
     )
 
 source $ZSH/oh-my-zsh.sh
