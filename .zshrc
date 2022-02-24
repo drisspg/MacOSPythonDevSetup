@@ -80,10 +80,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
-    osx
+    macos
     python
     pyenv
     pylint
+    dotenv
     aws
     colored-man-pages
     docker
@@ -111,3 +112,5 @@ eval "$(pyenv init -)"
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/
 pyenv virtualenvwrapper_lazy
+
+. /usr/local/etc/profile.d/autojump.sh
